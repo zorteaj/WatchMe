@@ -1,5 +1,4 @@
 apptools==4.4.0
-astroid==2.2.5
 autopep8==1.4.3
 colorama==0.4.1
 configobj==5.0.6
