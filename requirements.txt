@@ -14,7 +14,6 @@ Pillow==6.0.0
 pycodestyle==2.5.0
 pyface==5.1.0
 Pygments==2.2.0
-pylint==2.3.1
 pyserial==3.4
 rope==0.14.0
 scipy==1.2.1
