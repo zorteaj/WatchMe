@@ -112,6 +112,7 @@ class WatchMe(ShowBase):
         self.prev_face_y = None
         self.total_face_displacement = [0, 0]
 
+		# Moving averages
         self.xQueueSize = 20
         self.xQueue = collections.deque([0, 0, 0, 0, 0], self.xQueueSize)
         self.xQueueSum = 0
@@ -140,8 +141,6 @@ class WatchMe(ShowBase):
     # Move camera based on displacement
     # Turn eve's head to look at new camera position
     def turnHead(self, task):
-
-        print(self.eve.getDistance(self.camera))
         
         # Move camera up and down relative to displacement 
         # between frames (scaled arbitrarily for good practical results)
@@ -221,7 +220,6 @@ class WatchMe(ShowBase):
         # Compute displacement between current and previous frame
         d = displacement(np.array([self.prev_frame, frame]))
         self.total_displacement += d
-        # print(self.total_displacement)
         self.prev_frame = frame
         cv2.imshow("Capturing", frame)
         return d
