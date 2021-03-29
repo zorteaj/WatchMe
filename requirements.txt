@@ -13,7 +13,7 @@ panda3d==1.10.3
 Pillow==6.0.0
 pycodestyle==2.5.0
 pyface==5.1.0
-Pygments==2.2.0
+Pygments==2.7.4
 pyserial==3.4
 rope==0.14.0
 scipy==1.2.1
